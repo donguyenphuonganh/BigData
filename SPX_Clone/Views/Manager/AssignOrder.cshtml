@@ -1,0 +1,22 @@
+@model List<string>
+
+@{
+    ViewData["Title"] = "Assign Order";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post">
+    <label for="orderId">Order ID:</label>
+    <input type="text" id="orderId" name="orderId" class="form-control" required />
+
+    <label for="shipper">Select Shipper:</label>
+    <select id="shipper" name="shipper" class="form-control">
+        @foreach (var shipper in Model ?? new List<string>())
+        {
+            <option>@shipper</option>
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary mt-3">Assign Order</button>
+</form>

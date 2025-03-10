@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPX_Clone")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2383adb7e05b84002c803681123c8b0e3c90a8bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e9d93290705be4c636e404fc8b58422eebd78e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPX_Clone")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPX_Clone")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

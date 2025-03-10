@@ -1,85 +1,107 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SPX_Clone
 build_property.RootNamespace = SPX_Clone
-build_property.ProjectDir = D:\BigData\SPX_Clone\SPX_Clone\
+build_property.ProjectDir = /Users/nguyenkhoi/BigData/SPX_Clone/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\BigData\SPX_Clone\SPX_Clone
+build_property.MSBuildProjectDirectory = /Users/nguyenkhoi/BigData/SPX_Clone
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Customer/CreateOrder.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlT3JkZXIuY3NodG1s
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Customer/CreateOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvQ3JlYXRlT3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Customer/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Customer/OrderDetail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcT3JkZXJEZXRhaWwuY3NodG1s
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Customer/OrderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvT3JkZXJEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Customer/OrderList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcT3JkZXJMaXN0LmNzaHRtbA==
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Customer/OrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvT3JkZXJMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Customer/Profile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUHJvZmlsZS5jc2h0bWw=
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Customer/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Customer/_PartialProfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcX1BhcnRpYWxQcm9maWxlLmNzaHRtbA==
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Customer/_PartialProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvX1BhcnRpYWxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Manager/AssignOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9Bc3NpZ25PcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Manager/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Shipper/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcHBlclxJbmRleC5jc2h0bWw=
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Manager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Shipper/_PartialProfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcHBlclxfUGFydGlhbFByb2ZpbGUuY3NodG1s
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Manager/Statistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFuYWdlci9TdGF0aXN0aWNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/SPXAdmin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1BYQWRtaW5cSW5kZXguY3NodG1s
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Shipper/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcHBlci9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BigData/SPX_Clone/SPX_Clone/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-d8j45r9rgm
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Shipper/_PartialProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hpcHBlci9fUGFydGlhbFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/SPXAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU1BYQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nguyenkhoi/BigData/SPX_Clone/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-y8nfdnmfb3

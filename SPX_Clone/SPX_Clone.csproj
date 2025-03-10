@@ -20,6 +20,11 @@
     <PackageReference Include="bootstrap" Version="5.3.3" />
     <PackageReference Include="Confluent.Kafka" Version="2.8.0" />
     <PackageReference Include="jQuery" Version="3.7.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="toastr" Version="2.1.1" />
   </ItemGroup>
 

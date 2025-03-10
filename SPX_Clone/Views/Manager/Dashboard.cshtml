@@ -1,0 +1,27 @@
+@model List<SPX_Clone.Models.Order>
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model ?? new List<SPX_Clone.Models.Order>())
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.CustomerName</td>
+                <td>@order.Status</td>
+            </tr>
+        }
+    </tbody>
+</table>

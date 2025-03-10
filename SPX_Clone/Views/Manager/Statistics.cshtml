@@ -1,0 +1,13 @@
+@model dynamic
+
+@{
+    ViewData["Title"] = "Order Statistics";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<ul>
+    <li><strong>Total Orders:</strong> @Model?.TotalOrders ?? 0</li>
+    <li><strong>Monthly Revenue:</strong> $@Model?.MonthlyRevenue ?? 0</li>
+    <li><strong>Active Shippers:</strong> @Model?.ActiveShippers ?? 0</li>
+</ul>
