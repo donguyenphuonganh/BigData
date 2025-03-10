@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "KafkaController",
+    "Method": "SendMessage",
+    "RelativePath": "api/kafka/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

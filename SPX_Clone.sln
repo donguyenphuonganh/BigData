@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPX_Clone", "SPX_Clone\SPX_Clone.csproj", "{5C536768-24C8-456E-923B-E80D0F3C2B2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dataset", "dataset", "{EC64A096-146D-404C-A03F-618A66029CBA}"
+	ProjectSection(SolutionItems) = preProject
+		..\donhang.csv = ..\donhang.csv
+		..\khachhang.csv = ..\khachhang.csv
+		..\kho.csv = ..\kho.csv
+		..\taixe.csv = ..\taixe.csv
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C536768-24C8-456E-923B-E80D0F3C2B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C536768-24C8-456E-923B-E80D0F3C2B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C536768-24C8-456E-923B-E80D0F3C2B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C536768-24C8-456E-923B-E80D0F3C2B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A90FBCB7-F810-4DE9-8BD9-E94F02568856}
+	EndGlobalSection
+EndGlobal

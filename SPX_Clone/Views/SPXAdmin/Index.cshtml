@@ -1,0 +1,284 @@
+﻿@{
+    ViewBag.Title = "SPX Admin Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="spx-container">
+    <!-- Header -->
+    <div class="spx-header">
+        <div class="logo-container">
+            <img src="~/images/logo.png" alt="SPX Logo" class="spx-logo" />
+        </div>
+        <div class="header-nav">
+            <a href="#" class="nav-link"><i class="fa fa-home"></i> Trang chủ</a>
+            <a href="#" class="nav-link"><i class="fa fa-question-circle"></i> Trợ giúp</a>
+            <a href="#" class="nav-link notification"><i class="fa fa-bell"></i> Thông báo <span class="badge">1</span></a>
+            <a href="#" class="nav-link"><i class="fa fa-list"></i> Hoạt động</a>
+        </div>
+        <div class="user-settings">
+            <div class="language-selector">
+                <span class="active-lang">EN</span>
+                <span class="divider">|</span>
+                <a href="#" class="lang-option">Tiếng Việt</a>
+            </div>
+            <div class="user-profile dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="~/Content/Images/user-avatar.png" alt="User" class="user-avatar" />
+                    <span class="username">UserName</span>
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Thông tin tài khoản</a></li>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="spx-body">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="create-order-btn">
+                <button type="button" class="btn btn-create">
+                    <i class="fa fa-plus"></i> Tạo đơn
+                </button>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li class="active">
+                    <a href="#"><i class="fa fa-home"></i> Trang chủ & Thống kê</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fa fa-shopping-cart"></i> Quản lý đơn hàng
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fa fa-credit-card"></i> Quản lý Tài chính
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fa fa-user"></i> Quản lý Tài khoản
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="fa fa-question-circle"></i> Trợ giúp
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Create Order Section -->
+            <div class="content-section order-creation-section">
+                <div class="section-header">
+                    <h2>Lên đơn với SPX</h2>
+                </div>
+                <div class="order-creation-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        <div class="option-info">
+                            <h3>Tạo đơn hàng mới</h3>
+                            <p>Tạo đơn theo từng bước</p>
+                        </div>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fa fa-files-o"></i>
+                        </div>
+                        <div class="option-info">
+                            <h3>Tạo nhiều đơn hàng</h3>
+                            <p>Tạo nhiều đơn hàng bằng file...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Tracking Section -->
+            <div class="content-section order-tracking-section">
+                <div class="section-header">
+                    <h2>Theo dõi đơn hàng</h2>
+                </div>
+                <div class="order-tracking-form">
+                    <div class="search-container">
+                        <input type="text" class="form-control" placeholder="Nhập mã đơn hàng bạn cần tra cứu" />
+                        <button type="button" class="btn btn-search">Tra cứu</button>
+                    </div>
+                    <div class="tracking-note">
+                        <p>Chỉ có thể tra cứu các đơn được tạo bởi tài khoản này, hoặc có thể xem danh sách chi tiết tại <a href="#">Quản lý đơn hàng</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Statistics Section -->
+            <div class="content-section order-statistics-section">
+                <div class="section-header">
+                    <div class="title-with-update">
+                        <h2>Thống kê Đơn hàng</h2>
+                        <span class="update-time">Cập nhật lúc: 2025-03-07 21:57</span>
+                    </div>
+                    <div class="date-filter">
+                        <div class="filter-label">Thời gian tạo</div>
+                        <div class="date-range-picker">
+                            <input type="date" class="form-control" value="2025-02-28" />
+                            <span class="date-separator">-</span>
+                            <input type="date" class="form-control" value="2025-03-07" />
+                            <button class="btn btn-icon"><i class="fa fa-calendar"></i></button>
+                            <button class="btn btn-icon"><i class="fa fa-refresh"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="statistics-cards">
+                    <!-- Completed Orders Card -->
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-title">
+                                <h3>Tổng đơn hàng (tạo thành công)</h3>
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <a href="#" class="download-link">
+                                <i class="fa fa-download"></i> Tải danh sách đơn
+                            </a>
+                        </div>
+                        <div class="stat-value">0</div>
+
+                        <div class="stat-subtitle">Đơn đang xử lý</div>
+                        <div class="stat-details">
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Chờ lấy hàng</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Đang vận chuyển</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Đang giao hàng</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Giao hàng không thành công</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Đang hoàn hàng</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                        </div>
+
+                        <div class="stat-subtitle">Đơn đã kết thúc</div>
+                        <div class="stat-details">
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Đã giao hàng</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Hư hỏng/Mất hàng</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Lấy hàng thất bại</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Đã hủy</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Đã hoàn hàng</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                            <div class="stat-row">
+                                <div class="stat-label">
+                                    <span>Hoàn hàng thất bại</span>
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <div class="stat-count">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Failed Orders Card -->
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-title">
+                                <h3>Thống kê đơn giao không thành công và nguyên nhân</h3>
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <a href="#" class="download-link">
+                                <i class="fa fa-download"></i> Tải danh sách đơn
+                            </a>
+                        </div>
+                        <div class="stat-value">0</div>
+                        <div class="empty-state">
+                            <div class="no-data-indicator">
+                                <i class="fa fa-circle-o-notch"></i>
+                                <p>Không có dữ liệu - %</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Returns Card -->
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <div class="stat-title">
+                                <h3>Thống kê đơn hoàn và nguyên nhân</h3>
+                                <i class="fa fa-info-circle"></i>
+                            </div>
+                            <a href="#" class="download-link">
+                                <i class="fa fa-download"></i> Tải danh sách đơn
+                            </a>
+                        </div>
+                        <div class="stat-value">0</div>
+                        <div class="empty-state">
+                            <div class="no-data-indicator">
+                                <i class="fa fa-circle-o-notch"></i>
+                                <p>Không có dữ liệu - %</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

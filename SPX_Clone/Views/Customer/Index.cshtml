@@ -1,0 +1,153 @@
+﻿@{
+    ViewBag.Title = "SPX Customer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-4">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="text-primary">👋 Welcome back, <strong>[Tên Khách Hàng]</strong>!</h2>
+        <button id="profileButton" class="btn btn-outline-dark profile-icon">👤</button>
+    </div>
+
+    <!-- Search Bar & Create Order -->
+    <div class="row my-3">
+        <div class="col-md-8">
+            <input type="text" id="search" class="form-control" placeholder="🔍 Tìm kiếm đơn hàng...">
+        </div>
+        <div class="col-md-4 text-end">
+            <button class="btn btn-success" id="createOrderBtn">➕ Tạo Đơn Hàng</button>
+        </div>
+    </div>
+
+    <!-- Form tạo đơn hàng (ẩn mặc định) -->
+    <div id="orderForm" class="card p-3 d-none">
+        <h4 class="text-secondary">📝 Nhập thông tin đơn hàng</h4>
+        <form>
+            <div class="mb-3">
+                <label for="orderName" class="form-label">Tên đơn hàng</label>
+                <input type="text" class="form-control" id="orderName" placeholder="Nhập tên đơn hàng...">
+            </div>
+            <div class="mb-3">
+                <label for="orderItems" class="form-label">Số lượng sản phẩm</label>
+                <input type="number" class="form-control" id="orderItems" placeholder="Nhập số lượng...">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">✅ Xác nhận</button>
+        </form>
+    </div>
+
+    <!-- Danh sách đơn hàng -->
+    <div class="card shadow-sm p-3 mt-3">
+        <h3 class="text-secondary collapsible-title" data-target="#orderList">📦 Đơn hàng của bạn <span class="toggle-icon">▼</span></h3>
+        <div id="orderList" class="collapsible-content d-none">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    🛍️ Đơn hàng 1 - 2 sản phẩm
+                    <button class="btn btn-danger btn-sm">Hủy</button>
+                    <button class="btn btn-primary btn-sm">🔍</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    🛍️ Đơn hàng 2 - 5 sản phẩm
+                    <button class="btn btn-danger btn-sm">Hủy</button>
+                    <button class="btn btn-primary btn-sm">🔍</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Lịch sử mua hàng -->
+    <div class="card shadow-sm p-3 mt-3">
+        <h3 class="text-secondary collapsible-title" data-target="#historyList">🛒 Lịch sử mua hàng <span class="toggle-icon">▼</span></h3>
+        <div id="historyList" class="collapsible-content d-none">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    📅 Ngày 01/03 - Mua 3 sản phẩm
+                    <button class="btn btn-info btn-sm">🔍</button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    📅 Ngày 28/02 - Mua 1 sản phẩm
+                    <button class="btn btn-info btn-sm">🔍</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Profile Panel (Partial View) -->
+<div id="profilePanel" class="card position-absolute top-0 end-0 mt-5 me-3 p-3 shadow-lg bg-white d-none">
+    <div class="profile-content">
+        @Html.Partial("_PartialProfile")
+    </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const createOrderBtn = document.getElementById("createOrderBtn");
+        const orderForm = document.getElementById("orderForm");
+
+        createOrderBtn.addEventListener("click", function () {
+            orderForm.classList.toggle("d-none");
+        });
+
+        document.querySelectorAll(".collapsible-title").forEach(title => {
+            title.addEventListener("click", function () {
+                const target = document.querySelector(this.getAttribute("data-target"));
+                target.classList.toggle("d-none");
+                const icon = this.querySelector(".toggle-icon");
+                icon.textContent = target.classList.contains("d-none") ? "▼" : "▲";
+            });
+        });
+
+        const profileButton = document.getElementById("profileButton");
+        const profilePanel = document.getElementById("profilePanel");
+
+        profileButton.addEventListener("click", function (event) {
+            profilePanel.classList.toggle("d-none");
+            event.stopPropagation();
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!profilePanel.contains(event.target) && event.target !== profileButton) {
+                profilePanel.classList.add("d-none");
+            }
+        });
+    });
+</script>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .profile-icon {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .card {
+        transition: all 0.3s ease;
+    }
+
+    .list-group-item:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+
+    .collapsible-title {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toggle-icon {
+        font-weight: bold;
+        transition: 0.3s;
+    }
+</style>

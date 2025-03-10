@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SPX_Clone.props" />
+</Project>

@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "SPX Shipper";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-4">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="text-primary">🚚 Welcome, <strong>[Tên Shipper]</strong>!</h2>
+        <button id="profileButton" class="btn btn-outline-dark profile-icon">👤</button>
+    </div>
+
+    <!-- Search Bar & Order List -->
+    <div class="row my-3">
+        <div class="col-md-8">
+            <input type="text" id="search" class="form-control" placeholder="🔍 Tìm kiếm đơn hàng...">
+        </div>
+    </div>
+
+    <!-- Danh sách đơn hàng cần giao -->
+    <div class="card shadow-sm p-3">
+        <h3 class="text-secondary" onclick="toggleOrderList()">📦 Đơn hàng cần giao ▾</h3>
+        <ul id="orderList" class="list-group mt-2 d-none">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>🏠 Đơn hàng 1 - 2 sản phẩm</span>
+                <button class="btn btn-primary btn-sm">📍 Xem Chi Tiết</button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>🏠 Đơn hàng 2 - 5 sản phẩm</span>
+                <button class="btn btn-primary btn-sm">📍 Xem Chi Tiết</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Lịch sử giao hàng -->
+    <div class="card shadow-sm p-3 mt-3">
+        <h3 class="text-secondary" onclick="toggleHistoryList()">📜 Lịch sử giao hàng ▾</h3>
+        <ul id="historyList" class="list-group mt-2 d-none">
+            <li class="list-group-item">✅ Đơn hàng A - Đã giao</li>
+            <li class="list-group-item">✅ Đơn hàng B - Đã giao</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Profile Panel (Partial View) -->
+<div id="profilePanel" class="card position-absolute top-0 end-0 mt-5 me-3 p-3 shadow-lg bg-white d-none">
+    <div class="profile-content">
+        @Html.Partial("_PartialProfile")
+    </div>
+</div>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function toggleOrderList() {
+        document.getElementById("orderList").classList.toggle("d-none");
+    }
+
+    function toggleHistoryList() {
+        document.getElementById("historyList").classList.toggle("d-none");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const profileButton = document.getElementById("profileButton");
+        const profilePanel = document.getElementById("profilePanel");
+
+        profileButton.addEventListener("click", function (event) {
+            profilePanel.classList.toggle("d-none");
+            event.stopPropagation(); // Ngăn chặn sự kiện lan ra ngoài
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!profilePanel.contains(event.target) && event.target !== profileButton) {
+                profilePanel.classList.add("d-none");
+            }
+        });
+    });
+</script>
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .profile-icon {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .card {
+        transition: all 0.3s ease;
+    }
+
+    .list-group-item:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
+</style>

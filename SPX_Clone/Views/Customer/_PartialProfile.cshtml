@@ -1,0 +1,13 @@
+﻿<div id="profilePanel" class="profile-panel hidden">
+    <p><strong>Họ tên:</strong> [Tên Khách Hàng]</p>
+    <p><strong>Email:</strong> example@email.com</p>
+    <p><strong>Địa chỉ:</strong> Địa chỉ của bạn</p>
+    <button onclick="logout()">Đăng xuất</button>
+</div>
+
+<script>
+    function logout() {
+        alert("Bạn đã đăng xuất!");
+        window.location.href = "@Url.Action("Logout", "Customer")";
+    }
+</script>
